@@ -10,6 +10,8 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+app.set('port', process.env.PORT || 8080);
+var server = app.listen(app.get('port'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -64,4 +66,4 @@ app.use(function(err, req, res, next) {
 });
 
 
-module.exports = app;
+//module.exports = app;

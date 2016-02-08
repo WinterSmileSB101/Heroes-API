@@ -4,8 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var hero = require('./lib/hero');
-
+var heroes = require('./routes/hero');
 var app = express();
 
 // view engine setup
@@ -24,10 +23,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-app.get('/hero/get', hero.get);
-//app.get('/wines/:id', wine.findById);
-//app.post('/wines', wine.addWine);
-//app.put('/wines/:id', wine.updateWine);
+//routes
+app.use('/hero', heroes);
+
 
 
 

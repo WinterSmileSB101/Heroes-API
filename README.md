@@ -8,6 +8,8 @@
 ####How to use it:
 * Get hero by name: 
 https://enigmatic-spire-22585.herokuapp.com/hero/get?name=valla
+
+```
 {
 
     "name": "Valla",
@@ -32,11 +34,11 @@ https://enigmatic-spire-22585.herokuapp.com/hero/get?name=valla
 
 }
 
-
+```
 
 * Get all the heroes: 
 https://enigmatic-spire-22585.herokuapp.com/hero/getall/
-
+```
 
 {
 
@@ -86,3 +88,5 @@ https://enigmatic-spire-22585.herokuapp.com/hero/getall/
 },
 
 ....
+
+```

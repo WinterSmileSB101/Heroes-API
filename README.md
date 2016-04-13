@@ -7,8 +7,6 @@
 
 ####How to use it:
 
-* Get all the hero: 
-https://enigmatic-spire-22585.herokuapp.com/hero/getall/
 
 * Get hero by name: 
 https://enigmatic-spire-22585.herokuapp.com/hero/get?name=valla

@@ -13,6 +13,8 @@ router.get('/ids', heroesFire.heroId);
 
 //router.get('/guides', heroesFire.guides);
 router.get('/guides', heroesFire.guidesEachHero);
+//router.get('/sing-guide', heroesFire.singleGuide);
+
 
 
 

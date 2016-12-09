@@ -1,7 +1,5 @@
 ### Heroes of the Strom (?) API
 
-####Demo App:
-* http://xxtri.net/app/ 
 
 
 

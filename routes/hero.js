@@ -15,8 +15,7 @@ router.get('/ids', heroesFire.heroId);
 router.get('/guides', heroesFire.guidesEachHero);
 //router.get('/sing-guide', heroesFire.singleGuide);
 
-
-
+router.get('/id/update', heroesFire.updateHeroIdCol);
 
 
 module.exports = router;

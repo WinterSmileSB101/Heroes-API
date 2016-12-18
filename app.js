@@ -4,11 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var heroes = require('./routes/hero');
+var hero = require('./routes/hero');
+var api = require('./routes/api');
 var app = express();
 var cors = require('cors');
-
-
 
 
 // view engine setup
@@ -27,9 +26,8 @@ app.use(cors());
 
 
 // routes
-app.use('/hero', heroes);
-
-
+app.use('/hero', hero);
+app.use('/api', api);
 
 
 // catch 404 and forward to error handler
@@ -39,8 +37,8 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-// error handlers
 
+// error handlers
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
@@ -53,6 +51,7 @@ if (app.get('env') === 'development') {
   });
 }
 
+
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
@@ -62,12 +61,6 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
-
-
-
-
-
 
 
 module.exports = app;

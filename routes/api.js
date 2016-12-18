@@ -4,19 +4,16 @@ var hero = require('../lib/hero');
 var heroesFire = require('../lib/heroesfire');
 
 
+//format: [/api/get?name=li-li]
 router.get('/get', hero.get);
 router.get('/getall', hero.getAll);
 router.get('/ids', heroesFire.heroId);
-//router.get('/guides', heroesFire.guides);
+//format: [/api/guides?name=li-li]
 router.get('/guides', heroesFire.guidesEachHero);
-//router.get('/sing-guide', heroesFire.singleGuide);
 
-router.get('/id/update', heroesFire.updateHeroIdCol);
 
 
 module.exports = router;
 
-//app.get('/wines/:id', wine.findById);
-//app.post('/wines', wine.addWine);
-//app.put('/wines/:id', wine.updateWine);
+
 

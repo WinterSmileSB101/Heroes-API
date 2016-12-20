@@ -1,7 +1,7 @@
 ### Heroes of the Strom (?) API
 
 
-
+[![Build Status](https://travis-ci.org/hnaoto/Heroes-API.svg?branch=master)](https://travis-ci.org/hnaoto/Heroes-API)
 
 ####How to use it:
 

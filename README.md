@@ -7,7 +7,7 @@
 
 
 * Get hero by name: 
-https://enigmatic-spire-22585.herokuapp.com/hero/get?name=valla
+https://heroesfire.herokuapp.com/hero/get?name=valla
 
 ```
 {

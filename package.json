@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "node ./node_modules/mocha/bin/mocha"
+    "test": "make test"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -13,6 +13,7 @@
     "cors": "^2.7.1",
     "debug": "~2.2.0",
     "express": "^4.13.4",
+    "istanbul": "^0.4.5",
     "jade": "^1.11.0",
     "mongodb": "^2.2.16",
     "morgan": "~1.6.1",

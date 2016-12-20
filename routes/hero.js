@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var hero = require('../lib/hero');
-var heroesFire = require('../lib/heroesfire');
+var hero = require('../lib/engine/hero');
+var heroesFire = require('../lib/engine/heroesfire');
 
 
-router.get('/get', hero.get);
+router.get('/get', hero.getByName);
 router.get('/getall', hero.getAll);
 router.get('/ids', heroesFire.heroId);
 //router.get('/guides', heroesFire.guides);

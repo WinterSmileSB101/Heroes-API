@@ -1,9 +1,7 @@
 const assert = require('assert');
 var mongoClient = require('mongodb').MongoClient;
-var HeroesFireDB = require('../lib/dataAccess/HeroesFireDB.js');
-
-
-
+var HeroesFireDB = require('../lib/dataAccess/HeroesFireDB');
+var heroFixture = require('../test/fixtures/heroes.json');
 
 var heroesFireDB = new HeroesFireDB();
 var environment = process.env.NODE_ENV || 'development';
@@ -33,10 +31,11 @@ describe('functions of HeroesFireDB', function () {
 		it('should update document', function () {
 				assert.equal('heroes', heroesFireDB.colName);
     });
-		
-
-		
 });
+
+
+
+
 
 
 

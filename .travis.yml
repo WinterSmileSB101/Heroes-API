@@ -1,7 +1,15 @@
 language: node_js
 node_js:
-- "4"
+- '4'
 env:
 - CXX=g++-4.8
 script:
 - make test
+services: mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: mW55eIsQW0yE5NPyFaGG85VO4C+1DAvy+if5UNlxJbpIm3aFzw4JKaImgR9sYUexpLfavEu36qLv8F5n1U4r7PH/gDeiM1ZdyAOAl9PkTKVb7a0LgikdIVX4pbz42fHOR/CTuCORz+e0lUiJ7ehnPq5iBydZ1nVI8yUFVdxIJ11vgqkuZ1JYBiEifNJNm3HkfQ2LI1EQ+j+ov1z1uLjk/hYBZjsfvLqPigiANs3nl61vGSuvnBdSHZBfu9tPqyD43fxaw3vICKqH0Ax/LS23A38TN8Zuwqnd9gpnyJUnIDt1Yn8ide2SPRLy0TSVX5kRABAYOYqff4CKC9jKbpqfHm+ho//fvk9r5SF1VVq2JaSsPMu5Xs8jbacMx7hI60l2PNPq9L9lz4lm37DpVnjbhtQNbKeOpowRiRKmb0YLZF2+PpSftVFgvM9H42Sp/xxLieV961rB1CrBxKcGESKnmAcdhq5NL7YCEFf+yUoqDKpCC8ZxWCgxVMHWAU/srJXU89tnf3KZtBprHDIriUUat7i6QAqNmql6DpQ4H9dHcHBvPz/373OTYS0B4dZQhlwLxaipNLa0arEl4PZkKAwGcnZL9WBZyhPr5Boul+nrgaEGARJ0Ynl5Lt/+/MLvaAyNOYp3A23t9rkKDaaCJWjN8bzGOn4NDp8XdQFWvXPH/sg=
+  app: heroesfire
+  on:
+    repo: hnaoto/Heroes-API

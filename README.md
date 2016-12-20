@@ -1,4 +1,4 @@
-### Heroes of the Strom (?) API
+### HeroesFire API
 
 
 [![Build Status](https://travis-ci.org/hnaoto/Heroes-API.svg?branch=master)](https://travis-ci.org/hnaoto/Heroes-API)

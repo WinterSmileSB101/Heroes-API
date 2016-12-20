@@ -1,6 +1,6 @@
 const assert = require('assert');
 var mongoClient = require('mongodb').MongoClient;
-var HeroesFireDB = require('../lib/dataAccess/fireDataAccess.js');
+var HeroesFireDB = require('../lib/dataAccess/HeroesFireDB.js');
 
 
 

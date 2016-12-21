@@ -8,8 +8,8 @@ var heroesFire = require('../lib/engine/heroesfire');
 router.get('/get', hero.getByName);
 router.get('/getall', hero.getAll);
 router.get('/ids', heroesFire.heroId);
-//format: [/api/guides?name=li-li]
-router.get('/guides', heroesFire.getGuidesByName);
+//format: [/api/guides/get?name=li-li]
+router.get('/guides/get', heroesFire.getGuidesByName);
 
 
 module.exports = router;

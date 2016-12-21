@@ -8,7 +8,7 @@ router.get('/get', hero.getByName);
 router.get('/getall', hero.getAll);
 router.get('/ids', heroesFire.heroId);
 //router.get('/guides', heroesFire.guides);
-router.get('/guides', heroesFire.guidesEachHero);
+//router.get('/guides', heroesFire.getGuidesByName);
 //router.get('/sing-guide', heroesFire.singleGuide);
 
 router.get('/id/update', heroesFire.updateHeroIdCol);

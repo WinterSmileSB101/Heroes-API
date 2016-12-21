@@ -7,6 +7,11 @@ var heroesFireDB = new HeroesFireDB();
 var environment = process.env.NODE_ENV || 'development';
 
 
+heroesFireDB.get({name: 'li-li'},function(data){
+
+});
+
+
 
 describe('create instance of HeroesFireDB', function () {
 		it('should initialize mongo db collection name', function () {

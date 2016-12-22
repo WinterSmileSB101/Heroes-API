@@ -3,10 +3,21 @@
 
 [![Build Status](https://travis-ci.org/hnaoto/Heroes-API.svg?branch=master)](https://travis-ci.org/hnaoto/Heroes-API)
 
-####How to use it:
+HeroesFire doesn't have an official API. This project is a simple web crawler that collects information from HeroesFire. User could retrieve data of guides, hero stat and etc. 
+
+DEMO URL: https://heroesfire.herokuapp.com/
+
+####Guide:
+
+
+* Get all the guides of a hero by name
+/api/get?name=[name]
+
 
 
 * Get hero by name: 
+
+
 https://heroesfire.herokuapp.com/hero/get?name=valla
 
 ```

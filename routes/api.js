@@ -6,10 +6,11 @@ var heroesFire = require('../lib/engine/heroesfire');
 
 //format: [/api/get?name=li-li]
 router.get('/get', hero.getByName);
-router.get('/getall', hero.getAll);
+router.get('/get/all', hero.getAll);
 router.get('/ids', heroesFire.heroId);
-//format: [/api/guides/get?name=li-li]
-router.get('/guides/get', heroesFire.getGuidesByName);
+//format: [/api/guide/all/li-li]
+router.get('/guide/all/:name([a-zA-Z\-]+)', heroesFire.getAllGuideByName);
+//format: [/api/guide/get/hots/guide/chubbsz-li-li-guide-leoric-release-1296]
 router.get('/guide/get', heroesFire.getGuideDetail);
 
 module.exports = router;

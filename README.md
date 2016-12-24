@@ -48,9 +48,73 @@ Status: 200 OK
 
 
 
-* Get detail of a guide by url
+#### Get detail of one guide by url
 
-Get /api/guide/get?name='name'
+
+```
+Get /api/guide/get?url='url'
+
+```
+
+
+#### Response
+
+
+http://heroesfire.herokuapp.com/api/guide/get?url=hots/guide/chubbsz-li-li-guide-leoric-release-1296
+
+
+Status: 200 OK
+
+```
+{
+"title": "ChubbsZ Li Li Guide (Leoric Release)",
+"date": "Aug 16, 2015",
+"vote": "84",
+"author": "ChubbsZ",
+"skills": [
+{
+"level": "Level 1",
+"skill": "conjurers-pursuit"
+},
+{
+"level": "Level 4",
+"skill": "mass-vortex"
+},
+{
+"level": "Level 7",
+"skill": "the-good-stuff"
+},
+{
+"level": "Level 10",
+"skill": "jug-of-1000-cups-talent"
+},
+{
+"level": "Level 13",
+"skill": "surging-winds"
+},
+{
+"level": "Level 16",
+"skill": "two-for-one"
+},
+{
+"level": "Level 20",
+"skill": "kung-fu-hustle"
+}
+],
+"threats": [
+"gazlowe",
+"nazeebo",
+"nova",
+"rehgar",
+...
+]
+
+}
+```
+
+
+
+
 
 
 * Get hero by name: 

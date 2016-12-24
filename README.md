@@ -1,4 +1,4 @@
-# HeroesFire API
+# HeroesFire API (WEB CRAWLER)
 
 
 [![Build Status](https://travis-ci.org/hnaoto/Heroes-API.svg?branch=master)](https://travis-ci.org/hnaoto/Heroes-API)
@@ -20,8 +20,9 @@ Get /api/guide/get/all/:name
 http://heroesfire.herokuapp.com/api/guide/all/valla
 
 Status: 200 OK
-```
 
+
+```
 [
 {
 "url": "/hots/guide/equinoxs-valla-guide-24",
@@ -53,7 +54,6 @@ Status: 200 OK
 
 ```
 Get /api/guide/get?url='url'
-
 ```
 
 
@@ -113,15 +113,18 @@ Status: 200 OK
 ```
 
 
+#### Get detail of a hero by name: 
 
 
-
-
-* Get hero by name: 
+```
+Get /api/hero/get?name='name'
+```
+#### Response
 
 
 https://heroesfire.herokuapp.com/hero/get?name=valla
 
+Status: 200 OK
 ```
 {
 
@@ -149,8 +152,18 @@ https://heroesfire.herokuapp.com/hero/get?name=valla
 
 ```
 
-* Get all the heroes: 
-https://enigmatic-spire-22585.herokuapp.com/hero/getall/
+#### Get detail of all the heroes: 
+
+
+```
+Get /api/hero/get/all
+```
+
+#### Response
+
+
+Status: 200 OK
+
 ```
 
 {

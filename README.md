@@ -1,4 +1,4 @@
-### HeroesFire API
+# HeroesFire API
 
 
 [![Build Status](https://travis-ci.org/hnaoto/Heroes-API.svg?branch=master)](https://travis-ci.org/hnaoto/Heroes-API)
@@ -7,15 +7,41 @@ HeroesFire doesn't have an official API. This project is a simple web crawler th
 
 DEMO URL: https://heroesfire.herokuapp.com/
 
-####Guide:
+###Guide:
 
 
-* Get all the guides of a hero by name
-
+#### Get all the guides of a hero by name
+```
 Get /api/guide/get/all/:name
+```
 
+#### Response
 
-* Response
+http://heroesfire.herokuapp.com/api/guide/all/valla
+
+Status: 200 OK
+```
+
+[
+{
+"url": "/hots/guide/equinoxs-valla-guide-24",
+"votes": "286",
+"date": "December 21, 2015"
+},
+{
+"url": "/hots/guide/now-i-am-the-hunter-valla-guide-revised-461",
+"votes": "54",
+"date": "April 3, 2016"
+},
+{
+"url": "/hots/guide/hungering-arrow-max-dps-alternate-multi-shot-build-4133",
+"votes": "21",
+"date": "August 20, 2015"
+},
+.....
+]
+
+```
 
 
 

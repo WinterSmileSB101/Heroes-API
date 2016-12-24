@@ -11,8 +11,20 @@ DEMO URL: https://heroesfire.herokuapp.com/
 
 
 * Get all the guides of a hero by name
-/api/get?name=[name]
 
+Get /api/guide/get/all/:name
+
+
+* Response
+
+
+
+
+
+
+* Get detail of a guide by url
+
+Get /api/guide/get?name='name'
 
 
 * Get hero by name: 

@@ -12,6 +12,7 @@ router.get('/ids', heroesFire.heroId);
 router.get('/guide/all/:name([a-zA-Z\-]+)', heroesFire.getAllGuideByName);
 //format: [/api/guide/get/hots/guide/chubbsz-li-li-guide-leoric-release-1296]
 router.get('/guide/get', heroesFire.getGuideDetail);
+router.get('/guide/get/all', heroesFire.getAllHeroes);
 
 module.exports = router;
 

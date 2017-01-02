@@ -7,12 +7,6 @@ var heroesFireDB = new HeroesFireDB();
 var environment = process.env.NODE_ENV || 'development';
 
 
-heroesFireDB.get({name: 'li-li'},function(data){
-
-});
-
-
-
 describe('create instance of HeroesFireDB', function () {
 		it('should initialize mongo db collection name', function () {
 				assert.equal('heroes', heroesFireDB.colName);
@@ -31,12 +25,24 @@ describe('create instance of HeroesFireDB', function () {
 });
 
 
-
 describe('functions of HeroesFireDB', function () {
 		it('should update document', function () {
 				assert.equal('heroes', heroesFireDB.colName);
     });
+			
+		it('should get document', function () {
+			heroesFireDB.get({name: 'li-li'},function(data){
+
+			});
+				assert.equal('heroes', heroesFireDB.colName);
+    });
+		
 });
+
+
+
+
+
 
 
 

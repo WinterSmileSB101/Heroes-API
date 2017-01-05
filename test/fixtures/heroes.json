@@ -1,14 +1,19 @@
-{
-  "collections": {
-    "heores": [
-      {
-        "name": "Valla",
-        "hf_id": 7
-      },
-      {
-        "name": "Li-li",
-        "hf_id": 6
-      }
-    ]
-  }
-}
+[
+	{ "name": "li-li",
+		"hf_id": "672",
+		"guides": [
+			{	"url": "/hots/guide/chubbsz-li-li-guide-leoric-release-1296",
+				"votes": "84",
+				"date": "August 16, 2015"
+			}
+		]
+	},
+	{ "name": "valla",
+		"hf_id": "14",
+		"guides": [
+			{ "url": "/hots/guide/equinoxs-valla-guide-24",
+				"votes": "286",
+				"date": "December 21, 2015"}
+			]
+	}
+]

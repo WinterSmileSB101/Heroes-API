@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var index = require('./routes/index');
 var hero = require('./routes/hero');
 var api = require('./routes/api');
 var app = express();
@@ -26,6 +27,7 @@ app.use(cors());
 
 
 // routes
+app.use('/', index);
 app.use('/hero', hero);
 app.use('/api', api);
 

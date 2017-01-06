@@ -60,7 +60,7 @@ Get /api/guide/get?url='url'
 #### Response
 
 
-http://heroesfire.herokuapp.com/api/guide/get?url=hots/guide/chubbsz-li-li-guide-leoric-release-1296
+http://heroesfire.herokuapp.com/api/guide/get?url=/hots/guide/chubbsz-li-li-guide-leoric-release-1296
 
 
 Status: 200 OK

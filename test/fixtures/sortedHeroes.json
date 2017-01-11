@@ -1,0 +1,34 @@
+{
+	"date": {
+		"name": "li-li",
+		"hf_id": "672",
+		"guides": [
+		{"url": "/hots/guide/li-li-the-healbot-chromie-patch-4195",
+			"votes": "40",
+			"date": "May 17, 2016"
+		},
+		{"url": "/hots/guide/chubbsz-li-li-guide-leoric-release-1296",
+			"votes": "84",
+			"date": "August 16, 2015"
+		},
+		{"url": "/hots/guide/tracer-patch-tasty-and-lifesaving-19",
+			"votes": "82",
+			"date": "April 27, 2016"}
+		]
+	},
+	"votes": {
+	"name": "li-li",
+		"hf_id": "672",
+		"guides": [
+		{"url": "/hots/guide/chubbsz-li-li-guide-leoric-release-1296",
+			"votes": "84",
+			"date": "August 16, 2015"},
+		{"url": "/hots/guide/tracer-patch-tasty-and-lifesaving-19",
+			"votes": "82",
+			"date": "April 27, 2016"},
+		{"url": "/hots/guide/li-li-the-healbot-chromie-patch-4195",
+			"votes": "40",
+			"date": "May 17, 2016"}
+		]
+	}
+}

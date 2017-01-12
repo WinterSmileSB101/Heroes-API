@@ -5,8 +5,8 @@ var heroesFire = require('../lib/engine/heroesfire');
 
 
 //format: [/api/get?name=li-li]
-router.get('/hero/get', hero.getByName);
-router.get('/hero/get/all', hero.getAll);
+router.get('/stat/get', hero.getByName);
+router.get('/stat/get/all', hero.getAll);
 router.get('/ids', heroesFire.heroId);
 //format: [/api/guide/all/li-li]
 router.get('/guide/all/:name([a-zA-Z\-]+)', heroesFire.getAllGuideByName);

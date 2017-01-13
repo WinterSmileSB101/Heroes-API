@@ -10,12 +10,22 @@ var lili = heroFixture.find(x=>x.name='li-li');
 var guideUrl = lili.guides[0].url;
 
 describe('herores fire api test', function(){
+
+	it('should response with 404 invalid url', function(done){
+		request.get('/api/invalid/')
+		.expect(404, {}, done);
+	});
+	
 	it('should return guides by hero id', function(done){
 		request.get('/api/guide/all/li-li')
 		.expect('Content-Type', /json/)
 		.expect(200, lili, done);
 	});
-	
+
+	it('should response with 404 invalid hero name', function(done){
+		request.get('/api/guide/all/vall')
+		.expect(404, {}, done);
+	});
 	
 	it('should return guides by hero id with sort by votes', function(done){
 		request.get('/api/guide/all/li-li?sort=votes')

@@ -71,7 +71,7 @@
 				var boxS = $('<div class="boxS">   </div>');
 				var boxT = $('<div class="boxT"> </div>');
 
-				var icon_url = 'http://www.heroesfire.com/images/wikibase/icon/heroes/' + data[i ]['Hero'] + '.png';
+				var icon_url = 'http://www.heroesfire.com/images/wikibase/icon/heroes/' + data[i]['Hero'] + '.png';
 				boxT.attr('style', 'background-image:url(' +  icon_url +  ')' );
 				
 				var overlay =  data[i]['Free'] ?   $('<div class="overlay free" >   </div> ') : $('<div class="overlay" >  </div> ');

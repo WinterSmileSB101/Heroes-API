@@ -3,14 +3,14 @@
 
 [![Build Status](https://travis-ci.org/hnaoto/Heroes-API.svg?branch=master)](https://travis-ci.org/hnaoto/Heroes-API)
 
-HeroesFire doesn't have an official API. This project is a simple web crawler that collects information from HeroesFire. User could retrieve data of guides, hero stat and etc. 
+HeroesFire doesn't have an official API. This project is a simple web crawler that collects information from heroesfire.com. User could retrieve data of guides, hero stat and etc. 
 
 DEMO URL: https://heroesfire.herokuapp.com/
 
 ###Guide:
 
 
-#### Get all the guides of a hero by name
+#### Get all the guides of one hero by name
 ```
 Get /api/guide/get/all/:name
 ```
@@ -44,7 +44,23 @@ Status: 200 OK
 
 ```
 
+#### Get guides sorted by votes
 
+```
+Get /api/guide/get/all/:name?sort=votes
+```
+
+
+http://heroesfire.herokuapp.com/api/guide/all/li-ming?sort=votes
+
+
+#### Get guides sorted by date
+
+```
+Get /api/guide/get/all/:name?sort=date
+```
+
+http://heroesfire.herokuapp.com/api/guide/all/li-ming?sort=date
 
 
 
@@ -113,11 +129,11 @@ Status: 200 OK
 ```
 
 
-#### Get detail of a hero by name: 
+#### Get basic stat of a hero by name: 
 
 
 ```
-Get /api/hero/get?name='name'
+Get /api/stat/get?name='name'
 ```
 #### Response
 
@@ -152,11 +168,11 @@ Status: 200 OK
 
 ```
 
-#### Get detail of all the heroes: 
+#### Get basic stats of all the heroes: 
 
 
 ```
-Get /api/hero/get/all
+Get /api/stat/get/all
 ```
 
 #### Response

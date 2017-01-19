@@ -34,8 +34,7 @@ ul, ul li {
 
 .box {
 	position: relative;
-	min-width: 500px;
-	min-height: 500px;
+	max-width: 500px;
 	width: 40%;
 	height:100%;
 	float:left;

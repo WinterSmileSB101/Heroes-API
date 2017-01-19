@@ -13,7 +13,7 @@
 				var boxT = $('<a class="boxT"> </a>');
 				var guideUrl = '/api/guide/all/' + data[i]['name'];
 				boxT.attr('href', guideUrl);
-				var icon_url = 'http://www.heroesfire.com/images/wikibase/icon/heroes/' + data[i]['name'] + '.png';
+				var icon_url = 'https://www.heroesfire.com/images/wikibase/icon/heroes/' + data[i]['name'] + '.png';
 				boxT.attr('style', 'background-image:url(' +  icon_url +  ')' );
 				var overlay = $(data[i]['Free'] ?   $('<div class="overlay free" >   </div> ') : $('<div class="overlay" >  </div> '));
  

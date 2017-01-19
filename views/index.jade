@@ -4,6 +4,8 @@ block content
 	#container
 		.box
 			ul#hive
-				p #{heroes}
+	script.
+		var heroes=!{JSON.stringify(heroes)};
 	script(src='/javascripts/hexgon.js')
+
 

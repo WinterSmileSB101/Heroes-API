@@ -8,11 +8,11 @@
 	var data = heroes;
 	var n = (data.length / 13) * 2 ;
 		for (var i = 0; i < 52;  i++) {
-				var boxF = $('<div class="boxF">  </div>');
+				var boxF = $('<a class="boxF">  </a>');
 				var boxS = $('<div class="boxS">   </div>');
-				var boxT = $('<a class="boxT"> </a>');
+				var boxT = $('<div class="boxT">    </div>');
 				var guideUrl = '/api/guide/all/' + data[i]['name'];
-				boxT.attr('href', guideUrl);
+				boxF.attr('href', guideUrl);
 				var icon_url = 'https://www.heroesfire.com/images/wikibase/icon/heroes/' + data[i]['name'] + '.png';
 				boxT.attr('style', 'background-image:url(' +  icon_url +  ')' );
 				var overlay = $(data[i]['Free'] ?   $('<div class="overlay free" >   </div> ') : $('<div class="overlay" >  </div> '));

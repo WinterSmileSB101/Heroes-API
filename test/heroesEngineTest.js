@@ -39,6 +39,7 @@ describe('herores fire api test', function(){
 	});
 	
 	it('should return sepecific guide by url', function(done){
+		setTimeout(done, 3000);
 		request.get('/api/guide/get?url=' + guideUrl)
 		.expect('Content-Type', /json/)
 		.expect(200, done);

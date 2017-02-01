@@ -129,6 +129,68 @@ Status: 200 OK
 ```
 
 
+#### Get all the guides
+```
+Get /api/guide/all/
+```
+
+#### Response
+http://heroesfire.herokuapp.com/api/guide/all
+
+Status: 200 OK
+
+```
+{
+{
+hf_id: 1892,
+name: "xul",
+guide: {
+url: "/hots/guide/xul-the-responder-4-build-in-depth-guide-10020",
+votes: 30,
+date: "2016-03-09"
+}
+},
+{
+hf_id: 1892,
+name: "xul",
+guide: {
+url: "/hots/guide/quot-preserve-the-balance-always-quot-xul-guide-9999",
+votes: 35,
+date: "2016-03-04"
+}
+},
+}
+```
+#### Get all the guides sort by date
+```
+Get /api/guide/all?sort=date
+```
+#### Response
+
+http://heroesfire.herokuapp.com/api/guide/all?sort=date
+Status: 200 OK
+
+```
+{
+{
+hf_id: 2344,
+name: "varian",
+guide: {
+url: "/hots/guide/a-guide-to-varian-patch-22-7-12609",
+votes: 20,
+date: "Yesterday"
+}
+},
+{
+hf_id: 879,
+name: "rehgar",
+guide: {
+url: "/hots/guide/rehgar-the-ultimate-gladiator-zuljin-8889",
+votes: 33,
+date: "2017-01-14"
+}
+}
+```
 #### Get basic stat of a hero by name: 
 
 
